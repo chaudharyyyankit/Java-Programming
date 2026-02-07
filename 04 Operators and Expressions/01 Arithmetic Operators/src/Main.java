@@ -15,5 +15,15 @@ public class Main {
         float average = ((float) (a + b) /2);  //7/2 = 3.5 if not (float) then 3.0
         System.out.println(average);
 
+        //COERCION
+        //Internally conversion of data type byte + byte = int data type
+        // short + short, byte+short, int + int, short + int all gives int data type
+
+        //int + float gives float
+        //float + double gives double
+        //char + int gives int
+        //long + double gives double
+
+
     }
 }
