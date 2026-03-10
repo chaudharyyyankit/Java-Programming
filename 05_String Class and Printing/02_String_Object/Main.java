@@ -17,10 +17,12 @@ public class Main {
 
         byte[] b = {65, 66, 67, 68, 69, 97};
         String str2 = new String(b);
-        System.out.println(str2); //ABCDE as ASCII 65=A and so on also 97=a
+                //     |> new means opb is created in Heap
+        System.out.println(str2); //ABCDEa as ASCII 65=A and so on also 97=a
 
-        String str3 = new String("JAVA"); //Here we are creating a new string and as well giving a string literal
-        System.out.println(str3);
+        String str3 =            new String("JAVA"); //Here we are creating a new string and as well giving a string literal
+            //  |>ref (in heap)  |> literal obj is created
+        System.out.println(str3);  //JAVA
 
         //INTERESTING THINGS
         String name1 = "Ankit";  //obj is created
