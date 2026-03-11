@@ -1,4 +1,4 @@
-public class Main {
+public class StringMethods {
     static void main() {
 
         String str = "Java"; // JAVA literal Obj is created in pool not in heap
@@ -27,8 +27,25 @@ public class Main {
         System.out.println(str2.substring(3)); //come
 
         // if we give both beginning and ending string then the substring obj out of og string is created
-        System.out.println(str2.substring(2, 5)); //lco //the last index is not included
+        System.out.println(str2.substring(3, 6)); //com //the last index is not included
 
+        //6 .replace(char old, char new)
+        System.out.println(str2.replace('o', 'u')); //welcume //dont try to create substring (3,6) //it will be com :) strings are immutable we have to create another one but we haven't created here
 
+        //7. boolean startsWith()
+        String website = "http://www.yetidigitallabs.com";
+        System.out.println(website.startsWith("https")); //false
+
+        //8. boolean endsWith()
+        System.out.println(website.endsWith(".com")); //true we can differentiate .org, .gov or anything
+
+        //9. charAt(index)
+        System.out.println(website.charAt(0)); //h
+
+        //10. indexOf(char in string)  //first
+        System.out.println(website.indexOf('.')); //10
+
+        //11. lastIndexOf()
+        System.out.println(website.lastIndexOf('w')); //9
     }
 }
